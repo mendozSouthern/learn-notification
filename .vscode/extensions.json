@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "prisma.prisma",
+    "esbenp.prettier-vscode",
+    "mikestead.dotenv",
+    "oxc.oxc-vscode",
+    "ms-azuretools.vscode-docker",
+    "aaron-bond.better-comments"
+  ]
+}

@@ -1,0 +1,10 @@
+node_modules
+public
+pnpm-lock.yaml
+dist
+# .husky
+# .vscode
+# .env.example
+# .gitignore
+# .dockerignore
+# .prettierignore
