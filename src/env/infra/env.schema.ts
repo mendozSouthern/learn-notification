@@ -14,6 +14,10 @@ export const envSchema = z.object({
   TWILIO_ACCOUNT_SID: z.string(),
   TWILIO_AUTH_TOKEN: z.string(),
   TWILIO_PHONE_NUMBER: z.string(),
+
+  RABBITMQ_USER: z.string(),
+  RABBITMQ_PASSWORD: z.string(),
+  RABBITMQ_HOST: z.string(),
 });
 
 export type Env = z.infer<typeof envSchema>;

@@ -27,16 +27,5 @@ export class TwilioService {
 
   send(options: Omit<MessageListInstanceCreateOptions, 'from'>) {
     return this.sendSms({ ...options, from: this.options.fromSMSNumber ?? '' });
-    // return this.queue.add(() =>
-    //   pRetry(() => this.sendSms(options), {
-    //     onFailedAttempt: (error) => {
-    //       this.logger.debug(
-    //         `SMS to ${options.to} failed, retrying (${error.retriesLeft} attempts left)`,
-    //         error,
-    //       );
-    //     },
-    //     retries: this.options.retryAttempts ?? 3,
-    //   }),
-    // );
   }
 }
