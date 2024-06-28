@@ -10,6 +10,10 @@ export const envSchema = z.object({
   DATABASE_PASSWORD: z.string(),
   DATABASE_NAME: z.string(),
   DATABASE_URL: z.string().url(),
+
+  TWILIO_ACCOUNT_SID: z.string(),
+  TWILIO_AUTH_TOKEN: z.string(),
+  TWILIO_PHONE_NUMBER: z.string(),
 });
 
 export type Env = z.infer<typeof envSchema>;

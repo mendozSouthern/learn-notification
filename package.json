@@ -12,6 +12,7 @@
   },
   "license": "MIT",
   "scripts": {
+    "shell": "nest start --entryFile repl",
     "build": "nest build",
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
@@ -45,6 +46,7 @@
     "oxlint": "^0.5.0",
     "reflect-metadata": "^0.2.0",
     "rxjs": "^7.8.1",
+    "twilio": "^5.2.1",
     "zod": "^3.23.8"
   },
   "devDependencies": {

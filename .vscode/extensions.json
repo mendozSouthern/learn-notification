@@ -5,6 +5,7 @@
     "mikestead.dotenv",
     "oxc.oxc-vscode",
     "ms-azuretools.vscode-docker",
-    "aaron-bond.better-comments"
+    "aaron-bond.better-comments",
+    "rangav.vscode-thunder-client"
   ]
 }
