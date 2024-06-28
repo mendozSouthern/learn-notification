@@ -2,7 +2,7 @@ import { z } from 'zod';
 import { Environment } from '../domain/models/environment';
 
 export const envSchema = z.object({
-  NODE_ENV: z.nativeEnum(Environment),
+  NODE_ENV: z.nativeEnum(Environment).default(Environment.Development),
   PORT: z.coerce.number(),
   DATABASE_HOST: z.string(),
   DATABASE_PORT: z.coerce.number(),
